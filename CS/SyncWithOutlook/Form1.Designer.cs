@@ -34,7 +34,7 @@
             this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
             this.dateNavigator1 = new DevExpress.XtraScheduler.DateNavigator();
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
-            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
+            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -147,7 +147,7 @@
             this.schedulerControl1.Name = "schedulerControl1";
             this.schedulerControl1.Size = new System.Drawing.Size(692, 436);
             this.schedulerControl1.Start = new System.DateTime(2013, 9, 2, 0, 0, 0, 0);
-            this.schedulerControl1.Storage = this.schedulerStorage1;
+            this.schedulerControl1.DataStorage = this.schedulerStorage1;
             this.schedulerControl1.TabIndex = 4;
             this.schedulerControl1.Text = "schedulerControl1";
             this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler3);
@@ -298,7 +298,7 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
+        private DevExpress.XtraScheduler.SchedulerDataStorage schedulerStorage1;
         private DevExpress.XtraScheduler.DateNavigator dateNavigator1;
         private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
