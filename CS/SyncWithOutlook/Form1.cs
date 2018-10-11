@@ -43,7 +43,7 @@ namespace SyncWithOutlook {
             if(comboBoxEdit1.EditValue != null)
             {
                 #region #scheduler->outlook
-                AppointmentExportSynchronizer synchronizer = schedulerControl1.Storage.CreateOutlookExportSynchronizer();
+                AppointmentExportSynchronizer synchronizer = schedulerControl1.DataStorage.CreateOutlookExportSynchronizer();
                 // Specify the field that contains appointment identifier used by a third-party application.
                 synchronizer.ForeignIdFieldName = OutlookEntryIDFieldName;
                 // The AppointmentSynchronizing event allows you to control the operation for an individual appointment.
@@ -74,7 +74,7 @@ namespace SyncWithOutlook {
             if(comboBoxEdit1.EditValue != null)
             {
                 #region #outlook->scheduler
-                AppointmentImportSynchronizer synchronizer = schedulerControl1.Storage.CreateOutlookImportSynchronizer();
+                AppointmentImportSynchronizer synchronizer = schedulerControl1.DataStorage.CreateOutlookImportSynchronizer();
                 // Specify the field that contains appointment identifier used by a third-party application.
                 synchronizer.ForeignIdFieldName = OutlookEntryIDFieldName;
                 // The AppointmentSynchronizing event allows you to control the operation for an individual appointment.
