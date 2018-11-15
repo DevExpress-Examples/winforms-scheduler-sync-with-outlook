@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomObjects.cs](./CS/SyncWithOutlook/CustomObjects.cs) (VB: [CustomObjects.vb](./VB/SyncWithOutlook/CustomObjects.vb))
+* [Form1.cs](./CS/SyncWithOutlook/Form1.cs) (VB: [Form1.vb](./VB/SyncWithOutlook/Form1.vb))
+* [Program.cs](./CS/SyncWithOutlook/Program.cs) (VB: [Program.vb](./VB/SyncWithOutlook/Program.vb))
+* [SyncronizationOptionForm.cs](./CS/SyncWithOutlook/SyncronizationOptionForm.cs) (VB: [SyncronizationOptionForm.vb](./VB/SyncWithOutlook/SyncronizationOptionForm.vb))
+<!-- default file list end -->
 # Synchronization with MS Outlook  - a demonstration example
 
 
