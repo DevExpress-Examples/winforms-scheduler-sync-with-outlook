@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/SyncWithOutlook/Form1.cs) (VB: [Form1.vb](./VB/SyncWithOutlook/Form1.vb))
+<!-- default file list end -->
 # Synchronization with MS Outlook  - a demonstration example
 
 
