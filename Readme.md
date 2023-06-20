@@ -6,8 +6,11 @@
 # Synchronization with MS Outlook  - a demonstration example
 
 
-This example allows you to examine the operation of <a href="http://help.devexpress.com/#CoreLibraries/clsDevExpressXtraSchedulerExchangeAppointmentExportSynchronizertopic">AppointmentExportSynchronizer</a> and <a href="http://help.devexpress.com/#CoreLibraries/clsDevExpressXtraSchedulerExchangeAppointmentImportSynchronizertopic">AppointmentImportSynchronizer</a> objects which enable you to implement your own synchronization method.<br><br><u><strong>WARNING: When you run this example, you can delete all data in your MS Outlook calendar. We suggest that you backup your data prior to running the example.</strong></u>
+In v23.1+, Scheduler Control supports new APIs and allows you to synchronize user appointments with Microsoft 365 calendars (bi-directionally). Please refer to the [Synchronization with Microsoft 365 Calendars](https://docs.devexpress.com/WindowsForms/404317/controls-and-libraries/scheduler/import-and-export/synchronization-with-outlook-365-calendars) help topic for details.
 
-<br/>
+You can also use the build-in [DXGoogleCalendarSync](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync) component to set up the synchronization between a Scheduler Control and a Google Calendar: [Google Calendars](https://docs.devexpress.com/WindowsForms/120605/controls-and-libraries/scheduler/import-and-export/google-calendars).
 
-
+If the build-in synchronization functionality doesn't meet your requirements, this example allows you to examine the operation of <a href="http://help.devexpress.com/#CoreLibraries/clsDevExpressXtraSchedulerExchangeAppointmentExportSynchronizertopic">AppointmentExportSynchronizer</a> and <a href="http://help.devexpress.com/#CoreLibraries/clsDevExpressXtraSchedulerExchangeAppointmentImportSynchronizertopic">AppointmentImportSynchronizer</a> objects which enable you to implement your own synchronization method.<br><br><u><strong>WARNING: When you run this example, you can delete all data in your MS Outlook calendar. We suggest that you backup your data prior to running the example.</strong></u>
+_____
+See also:
+[Import and Export](https://docs.devexpress.com/WindowsForms/117342/controls-and-libraries/scheduler/import-and-export)
