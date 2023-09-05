@@ -1,5 +1,7 @@
-﻿Namespace SyncWithOutlook
-    Partial Public Class Form1
+Namespace SyncWithOutlook
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,22 +12,22 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim timeRuler3 As New DevExpress.XtraScheduler.TimeRuler()
-            Dim timeRuler4 As New DevExpress.XtraScheduler.TimeRuler()
+            Dim timeRuler3 As DevExpress.XtraScheduler.TimeRuler = New DevExpress.XtraScheduler.TimeRuler()
+            Dim timeRuler4 As DevExpress.XtraScheduler.TimeRuler = New DevExpress.XtraScheduler.TimeRuler()
             Me.layoutControl1 = New DevExpress.XtraLayout.LayoutControl()
             Me.btnOptions = New DevExpress.XtraEditors.SimpleButton()
             Me.comboBoxEdit1 = New DevExpress.XtraEditors.ComboBoxEdit()
@@ -44,22 +46,22 @@
             Me.layoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.emptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.layoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
-            DirectCast(Me.layoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.layoutControl1.SuspendLayout()
-            DirectCast(Me.comboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.memoEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.dateNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.schedulerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.schedulerStorage1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.emptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.comboBoxEdit1.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.memoEdit1.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.dateNavigator1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.schedulerControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.schedulerStorage1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem5), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem6), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.emptySpaceItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem7), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' layoutControl1
@@ -88,12 +90,13 @@
             Me.btnOptions.StyleController = Me.layoutControl1
             Me.btnOptions.TabIndex = 10
             Me.btnOptions.Text = "Options..."
+            AddHandler Me.btnOptions.Click, New System.EventHandler(AddressOf Me.btnOptions_Click)
             ' 
             ' comboBoxEdit1
             ' 
             Me.comboBoxEdit1.Location = New System.Drawing.Point(708, 468)
             Me.comboBoxEdit1.Name = "comboBoxEdit1"
-            Me.comboBoxEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.comboBoxEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEdit1.Size = New System.Drawing.Size(209, 20)
             Me.comboBoxEdit1.StyleController = Me.layoutControl1
             Me.comboBoxEdit1.TabIndex = 9
@@ -108,6 +111,7 @@
             Me.btnOutlookScheduler.StyleController = Me.layoutControl1
             Me.btnOutlookScheduler.TabIndex = 8
             Me.btnOutlookScheduler.Text = "Outlook -- > Scheduler"
+            AddHandler Me.btnOutlookScheduler.Click, New System.EventHandler(AddressOf Me.btnOutlookScheduler_Click)
             ' 
             ' btnSchedulerOutlook
             ' 
@@ -119,6 +123,7 @@
             Me.btnSchedulerOutlook.StyleController = Me.layoutControl1
             Me.btnSchedulerOutlook.TabIndex = 7
             Me.btnSchedulerOutlook.Text = "Scheduler --> Outlook"
+            AddHandler Me.btnSchedulerOutlook.Click, New System.EventHandler(AddressOf Me.btnSchedulerOutlook_Click)
             ' 
             ' memoEdit1
             ' 
@@ -142,7 +147,7 @@
             Me.schedulerControl1.Location = New System.Drawing.Point(12, 12)
             Me.schedulerControl1.Name = "schedulerControl1"
             Me.schedulerControl1.Size = New System.Drawing.Size(692, 436)
-            Me.schedulerControl1.Start = New Date(2013, 9, 2, 0, 0, 0, 0)
+            Me.schedulerControl1.Start = New System.DateTime(2013, 9, 2, 0, 0, 0, 0)
             Me.schedulerControl1.Storage = Me.schedulerStorage1
             Me.schedulerControl1.TabIndex = 4
             Me.schedulerControl1.Text = "schedulerControl1"
@@ -152,9 +157,9 @@
             ' layoutControlGroup1
             ' 
             Me.layoutControlGroup1.CustomizationFormText = "layoutControlGroup1"
-            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True
+            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
             Me.layoutControlGroup1.GroupBordersVisible = False
-            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() { Me.layoutControlItem3, Me.layoutControlItem4, Me.layoutControlItem5, Me.layoutControlItem6, Me.layoutControlItem1, Me.layoutControlItem2, Me.emptySpaceItem1, Me.layoutControlItem7})
+            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem3, Me.layoutControlItem4, Me.layoutControlItem5, Me.layoutControlItem6, Me.layoutControlItem1, Me.layoutControlItem2, Me.emptySpaceItem1, Me.layoutControlItem7})
             Me.layoutControlGroup1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup1.Name = "layoutControlGroup1"
             Me.layoutControlGroup1.Size = New System.Drawing.Size(929, 698)
@@ -261,46 +266,61 @@
             Me.Controls.Add(Me.layoutControl1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.layoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.layoutControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.layoutControl1.ResumeLayout(False)
-            DirectCast(Me.comboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.memoEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.dateNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.schedulerControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.schedulerStorage1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.emptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.comboBoxEdit1.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.memoEdit1.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.dateNavigator1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.schedulerControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.schedulerStorage1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem5), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem6), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.emptySpaceItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem7), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+'#End Region
         Private layoutControl1 As DevExpress.XtraLayout.LayoutControl
+
         Private layoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
+
         Private schedulerStorage1 As DevExpress.XtraScheduler.SchedulerStorage
+
         Private dateNavigator1 As DevExpress.XtraScheduler.DateNavigator
+
         Private schedulerControl1 As DevExpress.XtraScheduler.SchedulerControl
+
         Private comboBoxEdit1 As DevExpress.XtraEditors.ComboBoxEdit
-        Private WithEvents btnOutlookScheduler As DevExpress.XtraEditors.SimpleButton
-        Private WithEvents btnSchedulerOutlook As DevExpress.XtraEditors.SimpleButton
+
+        Private btnOutlookScheduler As DevExpress.XtraEditors.SimpleButton
+
+        Private btnSchedulerOutlook As DevExpress.XtraEditors.SimpleButton
+
         Private memoEdit1 As DevExpress.XtraEditors.MemoEdit
+
         Private layoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem6 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
+
         Private emptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
-        Private WithEvents btnOptions As DevExpress.XtraEditors.SimpleButton
+
+        Private btnOptions As DevExpress.XtraEditors.SimpleButton
+
         Private layoutControlItem7 As DevExpress.XtraLayout.LayoutControlItem
     End Class
 End Namespace
-

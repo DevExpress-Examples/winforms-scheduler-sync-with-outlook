@@ -1,5 +1,7 @@
-﻿Namespace SyncWithOutlook
-    Partial Public Class SyncronizationOptionForm
+Namespace SyncWithOutlook
+
+    Partial Class SyncronizationOptionForm
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -42,25 +44,25 @@
             Me.layoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
             Me.layoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
             Me.emptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
-            DirectCast(Me.layoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.layoutControl1.SuspendLayout()
-            DirectCast(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.checkEditAllowCreateScheduler.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.checkEditAllowUpdateScheduler.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.checkEditAllowRemoveScheduler.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.checkEditAllowCreateOutllok.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.checkEditAllowUpdateOutlook.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.checkEditAllowRemoveOutlook.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.emptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.checkEditAllowCreateScheduler.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.checkEditAllowUpdateScheduler.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.checkEditAllowRemoveScheduler.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.checkEditAllowCreateOutllok.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.checkEditAllowUpdateOutlook.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem5), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.checkEditAllowRemoveOutlook.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem6), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem7), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlGroup2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlGroup3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.emptySpaceItem1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' layoutControl1
@@ -84,9 +86,9 @@
             ' layoutControlGroup1
             ' 
             Me.layoutControlGroup1.CustomizationFormText = "layoutControlGroup1"
-            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True
+            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
             Me.layoutControlGroup1.GroupBordersVisible = False
-            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() { Me.layoutControlItem7, Me.layoutControlGroup2, Me.layoutControlGroup3, Me.emptySpaceItem1})
+            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem7, Me.layoutControlGroup2, Me.layoutControlGroup3, Me.emptySpaceItem1})
             Me.layoutControlGroup1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup1.Name = "layoutControlGroup1"
             Me.layoutControlGroup1.Size = New System.Drawing.Size(406, 274)
@@ -227,6 +229,7 @@
             Me.simpleButton1.StyleController = Me.layoutControl1
             Me.simpleButton1.TabIndex = 10
             Me.simpleButton1.Text = "Close"
+            AddHandler Me.simpleButton1.Click, New System.EventHandler(AddressOf Me.simpleButton1_Click)
             ' 
             ' layoutControlItem7
             ' 
@@ -243,7 +246,7 @@
             ' layoutControlGroup2
             ' 
             Me.layoutControlGroup2.CustomizationFormText = "Allowed operations in Scheduler"
-            Me.layoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() { Me.layoutControlItem1, Me.layoutControlItem2, Me.layoutControlItem3})
+            Me.layoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem1, Me.layoutControlItem2, Me.layoutControlItem3})
             Me.layoutControlGroup2.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup2.Name = "layoutControlGroup2"
             Me.layoutControlGroup2.Size = New System.Drawing.Size(386, 112)
@@ -252,7 +255,7 @@
             ' layoutControlGroup3
             ' 
             Me.layoutControlGroup3.CustomizationFormText = "Allowed operations in Outlook"
-            Me.layoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() { Me.layoutControlItem4, Me.layoutControlItem5, Me.layoutControlItem6})
+            Me.layoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem4, Me.layoutControlItem5, Me.layoutControlItem6})
             Me.layoutControlGroup3.Location = New System.Drawing.Point(0, 112)
             Me.layoutControlGroup3.Name = "layoutControlGroup3"
             Me.layoutControlGroup3.Size = New System.Drawing.Size(386, 112)
@@ -276,49 +279,66 @@
             Me.Controls.Add(Me.layoutControl1)
             Me.Name = "SyncronizationOptionForm"
             Me.Text = "SyncronizationOptionForm"
-            DirectCast(Me.layoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.SyncronizationOptionForm_Load)
+            CType((Me.layoutControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.layoutControl1.ResumeLayout(False)
-            DirectCast(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.checkEditAllowCreateScheduler.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.checkEditAllowUpdateScheduler.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.checkEditAllowRemoveScheduler.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.checkEditAllowCreateOutllok.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.checkEditAllowUpdateOutlook.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.checkEditAllowRemoveOutlook.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.emptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.checkEditAllowCreateScheduler.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.checkEditAllowUpdateScheduler.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.checkEditAllowRemoveScheduler.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.checkEditAllowCreateOutllok.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.checkEditAllowUpdateOutlook.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem5), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.checkEditAllowRemoveOutlook.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem6), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem7), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlGroup2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlGroup3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.emptySpaceItem1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+'#End Region
         Private layoutControl1 As DevExpress.XtraLayout.LayoutControl
+
         Private layoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
-        Private WithEvents simpleButton1 As DevExpress.XtraEditors.SimpleButton
+
+        Private simpleButton1 As DevExpress.XtraEditors.SimpleButton
+
         Private checkEditAllowRemoveOutlook As DevExpress.XtraEditors.CheckEdit
+
         Private checkEditAllowUpdateOutlook As DevExpress.XtraEditors.CheckEdit
+
         Private checkEditAllowCreateOutllok As DevExpress.XtraEditors.CheckEdit
+
         Private checkEditAllowRemoveScheduler As DevExpress.XtraEditors.CheckEdit
+
         Private checkEditAllowUpdateScheduler As DevExpress.XtraEditors.CheckEdit
+
         Private checkEditAllowCreateScheduler As DevExpress.XtraEditors.CheckEdit
+
         Private layoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem6 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem7 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlGroup2 As DevExpress.XtraLayout.LayoutControlGroup
+
         Private layoutControlGroup3 As DevExpress.XtraLayout.LayoutControlGroup
+
         Private emptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
     End Class
 End Namespace
