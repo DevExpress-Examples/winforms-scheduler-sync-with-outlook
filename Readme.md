@@ -3,14 +3,24 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T158895)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Synchronization with MS Outlook  - a demonstration example
+# WinForms Scheduler - Synchronize appointments with MS Outlook
+
+> **Important**
+>
+> Please backup your data before running the example. When you run this example, you can delete all data in your MS Outlook calendar.
+
+This example shows how to create and configure [AppointmentExportSynchronizer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraScheduler.Exchange.AppointmentExportSynchronizer) and [AppointmentImportSynchronizer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraScheduler.Exchange.AppointmentImportSynchronizer) objects to implement appointment synchronization.
+
+Read the following help topic for more information [Synchronization with Microsoft Outlook](https://docs.devexpress.com/WindowsForms/3937/controls-and-libraries/scheduler/import-and-export/synchronization-with-microsoft-outlook).
+
+> **Note**
+> 
+> In v23.1+, you can synchronize user appointments with Microsoft 365 calendars (bi-directionally).
+>
+> Read the following help topic for more information: [Synchronization with Microsoft 365 Calendars](https://docs.devexpress.com/WindowsForms/404317/controls-and-libraries/scheduler/import-and-export/synchronization-with-outlook-365-calendars).
 
 
-In v23.1+, Scheduler Control supports new APIs and allows you to synchronize user appointments with Microsoft 365 calendars (bi-directionally). Please refer to the [Synchronization with Microsoft 365 Calendars](https://docs.devexpress.com/WindowsForms/404317/controls-and-libraries/scheduler/import-and-export/synchronization-with-outlook-365-calendars) help topic for details.
+## Documentation
 
-You can also use the build-in [DXGoogleCalendarSync](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync) component to set up the synchronization between a Scheduler Control and a Google Calendar: [Google Calendars](https://docs.devexpress.com/WindowsForms/120605/controls-and-libraries/scheduler/import-and-export/google-calendars).
-
-If the build-in synchronization functionality doesn't meet your requirements, this example allows you to examine the operation of <a href="http://help.devexpress.com/#CoreLibraries/clsDevExpressXtraSchedulerExchangeAppointmentExportSynchronizertopic">AppointmentExportSynchronizer</a> and <a href="http://help.devexpress.com/#CoreLibraries/clsDevExpressXtraSchedulerExchangeAppointmentImportSynchronizertopic">AppointmentImportSynchronizer</a> objects. These objects enable you to implement your own synchronization method.<br><br><u><strong>WARNING: When you run this example, you can delete all data in your MS Outlook calendar. We suggest that you backup your data prior to running the example.</strong></u>
-_____
-See also:
-[Import and Export](https://docs.devexpress.com/WindowsForms/117342/controls-and-libraries/scheduler/import-and-export)
+* [Synchronization with Microsoft 365 Calendars](https://docs.devexpress.com/WindowsForms/404317/controls-and-libraries/scheduler/import-and-export/synchronization-with-outlook-365-calendars)
+* [Synchronization with Google Calendars](https://docs.devexpress.com/WindowsForms/120605/controls-and-libraries/scheduler/import-and-export/google-calendars)
