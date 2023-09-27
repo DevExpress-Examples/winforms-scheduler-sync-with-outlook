@@ -3,11 +3,11 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T158895)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# WinForms Scheduler - Synchronize appointments with MS Outlook
+# WinForms Scheduler - Synchronize appointments with Microsoft Outlook
 
 > **Important**
 >
-> Please backup your data before running the example. When you run this example, you can delete all data in your MS Outlook calendar.
+> Please back up your data before running the example. When you run this example, you can delete all data in your Microsoft Outlook calendar.
 
 This example shows how to create and configure [AppointmentExportSynchronizer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraScheduler.Exchange.AppointmentExportSynchronizer) and [AppointmentImportSynchronizer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraScheduler.Exchange.AppointmentImportSynchronizer) objects to implement appointment synchronization.
 
