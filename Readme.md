@@ -26,7 +26,7 @@ Read the following help topic for more information [Synchronization with Microso
 * [Synchronization with Microsoft 365 Calendars](https://docs.devexpress.com/WindowsForms/404317/controls-and-libraries/scheduler/import-and-export/synchronization-with-outlook-365-calendars)
 * [Synchronization with Google Calendars](https://docs.devexpress.com/WindowsForms/120605/controls-and-libraries/scheduler/import-and-export/google-calendars)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-scheduler-sync-with-outlook&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-scheduler-sync-with-outlook&~~~was_helpful=no)
 
